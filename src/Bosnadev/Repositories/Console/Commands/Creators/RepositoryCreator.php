@@ -111,7 +111,7 @@ class RepositoryCreator {
     protected function getDirectory()
     {
         // Get the directory from the config file.
-        $directory = Config::get('repositories.repository_path');
+        $directory = config('repositories.repository_path');
 
         // Return the directory.
         return $directory;
@@ -193,13 +193,13 @@ class RepositoryCreator {
     protected function getPopulateData()
     {
         // Repository namespace.
-        $repository_namespace = Config::get('repositories.repository_namespace');
+        $repository_namespace = config('repositories.repository_namespace');
 
         // Repository class.
         $repository_class     = $this->getRepositoryName();
 
         // Model path.
-        $model_path           = Config::get('repositories.model_namespace');
+        $model_path           = config('repositories.model_namespace');
 
         // Model name.
         $model_name           = $this->getModelName();
