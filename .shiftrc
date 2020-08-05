@@ -1,0 +1,5 @@
+[shift]
+
+additional_paths = "src"
+
+excluded_paths = ""
