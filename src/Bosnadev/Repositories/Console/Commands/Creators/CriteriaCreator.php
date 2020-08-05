@@ -119,7 +119,7 @@ class CriteriaCreator {
         $model = $this->getModel();
 
         // Get the criteria path from the config file.
-        $directory = Config::get('repositories.criteria_path');
+        $directory = config('repositories.criteria_path');
 
         // Check if the model is not null.
         if(isset($model) && !empty($model))
@@ -147,7 +147,7 @@ class CriteriaCreator {
         $model    = $this->pluralizeModel();
 
         // Criteria namespace.
-        $criteria_namespace = Config::get('repositories.criteria_namespace');
+        $criteria_namespace = config('repositories.criteria_namespace');
 
         // Criteria class.
         $criteria_class     = $criteria;
